@@ -1,0 +1,181 @@
+/* .activities-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #f8f8f8;
+  }
+  
+  .activities-section h2 {
+    font-size: 36px;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .section-description {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 40px;
+  }
+  
+  .activities-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .activity-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .activity-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .activity-card h3 {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #333;
+  }
+  
+  .activity-card p {
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+  }
+  
+  .activity-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+  }
+  
+
+   */
+
+
+
+
+   .activities-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #f8f8f8;
+  }
+  
+  .activities-section h2 {
+    font-size: 36px;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .section-description {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 40px;
+  }
+  
+  .activities-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .activity-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .activity-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .activity-card h3 {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #333;
+  }
+  
+  .activity-card p {
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+  }
+  
+  .activity-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+  }
+  
+  /* Media Queries for Responsiveness */
+  
+  /* For tablets and medium screens (max-width: 1024px) */
+  @media (max-width: 1024px) {
+    .activities-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+    }
+  
+    .activity-card {
+      padding: 20px; /* Slightly smaller padding */
+    }
+  
+    .activities-section h2 {
+      font-size: 30px; /* Reduce font size for the header */
+    }
+  
+    .section-description {
+      font-size: 14px; /* Adjust description font size */
+    }
+  }
+  
+  /* For mobile screens (max-width: 768px) */
+  @media (max-width: 768px) {
+    .activities-grid {
+      grid-template-columns: 1fr; /* 1 column on small screens */
+    }
+  
+    .activity-card {
+      padding: 15px; /* Even smaller padding */
+    }
+  
+    .activities-section h2 {
+      font-size: 26px; /* Smaller font size for mobile */
+    }
+  
+    .section-description {
+      font-size: 12px; /* Adjust description font size */
+    }
+  }
+  
+  /* For very small screens (max-width: 480px) */
+  @media (max-width: 480px) {
+    .activities-section {
+      padding: 20px; /* Reduce padding for very small screens */
+    }
+  
+    .activities-grid {
+      grid-template-columns: 1fr; /* Stack cards in 1 column */
+    }
+  
+    .activity-card {
+      padding: 10px; /* Minimal padding */
+    }
+  
+    .activities-section h2 {
+      font-size: 22px; /* Smaller font size for very small screens */
+    }
+  
+    .section-description {
+      font-size: 10px; /* Further reduce description font size */
+    }
+  }
+  
