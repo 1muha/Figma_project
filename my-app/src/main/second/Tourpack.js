@@ -4,7 +4,6 @@ import rome from "../../assets/rome.png"
 import lahore from "../../assets/lahore.png"
 import singapur from "../../assets/singapur.png"
 
-
 const TourPack = () => {
   return (
     <section className="tour-packages">
@@ -15,10 +14,9 @@ const TourPack = () => {
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
         </p>
         <div className="cards">
-          {/* Rome Card */}
           <div className="card">
             <img
-              src= {rome} // Replace with actual image URL
+              src= {rome}
               alt="Rome, Italy"
               className="card-image"
             />
@@ -28,10 +26,9 @@ const TourPack = () => {
               <p className="card-price">$5.24K</p>
             </div>
           </div>
-          {/* Lahore Card */}
           <div className="card">
             <img
-              src={lahore} // Replace with actual image URL
+              src={lahore}
               alt="Lahore, Pakistan"
               className="card-image"
             />
@@ -41,10 +38,9 @@ const TourPack = () => {
               <p className="card-price">$3.25K</p>
             </div>
           </div>
-          {/* Singapore Card */}
           <div className="card">
             <img
-              src={singapur} // Replace with actual image URL
+              src={singapur}
               alt="Singapore"
               className="card-image"
             />

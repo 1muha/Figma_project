@@ -1,6 +1,5 @@
 import React from "react";
 import "./Activities.css";
-// import vector from "../../assets/vector.png";
 import camp from "../../assets/camp.png";
 import mount from "../../assets/mount.png";
 import car from "../../assets/car.png";

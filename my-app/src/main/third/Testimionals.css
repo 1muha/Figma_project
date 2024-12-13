@@ -1,4 +1,3 @@
-/* Reviews Component Styling */
 .reviews {
     text-align: center;
     padding: 2rem;
@@ -74,7 +73,6 @@
   
   
   
-  /* Responsive Styling */
   @media (max-width: 780px),(max-width: 610px) {
     .reviews {
       padding: 1rem;

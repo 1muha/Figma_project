@@ -1,5 +1,5 @@
 import React from "react";
-import "./Sharepic.css"; // Link to the CSS file
+import "./Sharepic.css";
 import shar from "../../assets/shar.png"
 import ruksak from "../../assets/ruksak.png"
 import bridge from "../../assets/bridge.png"
@@ -10,7 +10,7 @@ import orol from "../../assets/orol.png"
 
 const Sharepic = () => {
   const photos = [
-    shar, // Replace with actual image URLs
+    shar, 
     ruksak,
     bridge,
     friends,

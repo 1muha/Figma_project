@@ -18,7 +18,7 @@
   }
   
   .section-title .highlight {
-    color: #d92b6b; /* Highlight color */
+    color: #d92b6b; 
     font-style: italic;
   }
   
@@ -29,7 +29,6 @@
     line-height: 1.6;
   }
   
-  /* Photo Grid */
   .photo-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -71,7 +70,6 @@
   }
   
   
-  /* Responsive Grid */
   @media (max-width: 768px) {
     .photo-grid {
       grid-template-columns: repeat(2, 1fr);

@@ -1,4 +1,3 @@
-/* Newsletter Component Styling */
 .newsletter {                         
   background: linear-gradient(to right, #CD1A40, #FF803C);
   color: #fff;
@@ -72,21 +71,16 @@
   background-color: #ff7e5f;
   color: #fff;
 }
-/* Media Query for max-width 480px */
-/* @media (max-width: 850px){
-  .img1{
-    display: none;
-  }
-} */
+
 @media (max-width: 480px), (max-width: 830px){
   .img1 {
-    display: none; /* Hide the image */
+    display: none;
   }
 
   .newsletter {
     padding: 1rem;
-    height: auto; /* Ensure the container adjusts its height */
-    min-height: 300px; /* Add a minimum height to keep the container from collapsing */
+    height: auto; 
+    min-height: 300px; 
     margin-top: 20px;
   }
 
@@ -123,16 +117,15 @@
   }
 }
 
-/* Media Query for max-width 790px */
 @media (max-width: 790px) {
   .img1 {
-    display: none; /* Hide the image */
+    display: none;
   }
 
   .newsletter {
     padding: 1.5rem;
-    height: auto; /* Ensure the container adjusts its height */
-    min-height: 300px; /* Add a minimum height to keep the container from collapsing */
+    height: auto;
+    min-height: 300px;
     margin-top: 30px;
   }
 

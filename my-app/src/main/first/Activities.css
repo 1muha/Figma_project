@@ -25,15 +25,13 @@
   gap: 20px;
 }
 
-/* Agar Bunday  qilsak boladi */
-
 .activity-card {
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
   transition: transform 0.3s ease-in-out;
-  background-color: #FFF9F0; /* Default background for all cards */
+  background-color: #FFF9F0;
 }
 
 .activity-card:hover {
@@ -44,22 +42,21 @@
 .activity-card h3 {
   font-size: 24px;
   margin-top: 20px;
-  color: #333; /* Default color for heading */
+  color: #333;
 }
 
-.activity-card:hover h3{
+.activity-card:hover h3 {
   color: white;
 }
 
-.activity-card:hover p{
+.activity-card:hover p {
   color: white;
 }
 
 .activity-card p {
   font-size: 14px;
-  color: #666; /* Default color for text */
+  color: #666;
   margin-top: 10px;
-
 }
 
 .activity-icon {
@@ -69,32 +66,29 @@
 }
 
 .trvl {
-  font-family: "Clicker Script", cursive;  /* Use Clicker Script font */
+  font-family: "Clicker Script", cursive;
   font-weight: 300;
   font-style: italic;
   color: #ee1c45;
 }
 
-
-/* Media Queries for Responsiveness */
-
-@media (max-width: 900px), (max-width:1080px){
-  .section-description{
+@media (max-width: 900px), (max-width: 1080px) {
+  .section-description {
     display: none;
   }
 }
 
-@media (max-width: 800px){
+@media (max-width: 800px) {
   .activities-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .activity-card {
-    padding: 20px; /* Slightly smaller padding */
+    padding: 20px;
   }
 
   .activities-section h2 {
-    font-size: 30px; /* Reduce font size for the header */
+    font-size: 30px;
   }
 
   .section-description {
@@ -102,46 +96,42 @@
   }
 }
 
-/* For mobile screens (max-width: 768px) */
 @media (max-width: 768px) {
   .activities-grid {
-    grid-template-columns: 1fr; /* 1 column on small screens */
+    grid-template-columns: 1fr;
   }
 
   .activity-card {
-    padding: 15px; /* Even smaller padding */
+    padding: 15px;
   }
 
   .activities-section h2 {
-    font-size: 26px; /* Smaller font size for mobile */
+    font-size: 26px;
   }
 
   .section-description {
-    font-size: 12px; /* Adjust description font size */
+    font-size: 12px;
   }
 }
 
-/* For very small screens (max-width: 480px) */
 @media (max-width: 480px) {
   .activities-section {
-    padding: 20px; /* Reduce padding for very small screens */
+    padding: 20px;
   }
 
   .activities-grid {
-    grid-template-columns: 1fr; /* Stack cards in 1 column */
+    grid-template-columns: 1fr;
   }
 
   .activity-card {
-    padding: 10px; /* Minimal padding */
+    padding: 10px;
   }
 
   .activities-section h2 {
-    font-size: 22px; /* Smaller font size for very small screens */
+    font-size: 22px;
   }
 
   .section-description {
-    font-size: 10px; /* Further reduce description font size */
+    font-size: 10px;
   }
 }
-
-
