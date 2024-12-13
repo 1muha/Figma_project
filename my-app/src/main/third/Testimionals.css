@@ -24,7 +24,7 @@
   }
   
   .testimonial {
-    background: linear-gradient(90deg, #ff7e5f, #feb47b);
+    background: linear-gradient(to right, #b14159, #FF803C);
     padding: 1.5rem;
     border-radius: 8px;
     color: #fff;
@@ -53,6 +53,7 @@
     display: flex;
     justify-content: center;
     gap: 1rem;
+    margin-top: 50px;
   }
   
   .avatar {
@@ -62,9 +63,19 @@
     object-fit: cover;
     border: 2px solid #ddd;
   }
+  .triangle {
+    width: 30px;
+    height: 50px;
+    background-color: #ff7043; /* Orange color */
+    clip-path: polygon(0 0, 50% 0, -50% 100%); /* Creates the triangle */
+    margin-left: 41rem;
+    transform: translateY(4.6rem);
+  }
+  
+  
   
   /* Responsive Styling */
-  @media (max-width: 768px) {
+  @media (max-width: 780px),(max-width: 610px) {
     .reviews {
       padding: 1rem;
     }
@@ -85,6 +96,13 @@
       width: 40px;
       height: 40px;
     }
+    .section-subtitle {
+      display: none;
+    }
+    .triangle{
+      margin-left: 380px;
+      transform: translateY(66px);
+    }
   }
   
   @media (max-width: 480px) {
@@ -94,6 +112,12 @@
   
     .testimonial-quote {
       font-size: 0.9rem;
+    }
+    .section-subtitle {
+      display: none;
+    }
+    .triangle{
+      margin-left: 190px;
     }
   }
   

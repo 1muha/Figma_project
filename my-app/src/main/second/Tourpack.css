@@ -84,13 +84,13 @@ body {
   }
   
   /* Media Queries */
-  @media (max-width: 768px) {
+  @media (max-width: 800px) {
     .section-title {
       font-size: 1.8rem;
     }
   
     .section-subtitle {
-      font-size: 0.9rem;
+      display: none;
     }
   
     .cards {
@@ -108,7 +108,7 @@ body {
     }
   
     .section-subtitle {
-      font-size: 0.8rem;
+      display: none;
     }
   
     .card {

@@ -1,6 +1,8 @@
 .shared-photos {
     text-align: center;
-    padding: 2rem 1rem;
+    padding: 2rem;
+    padding-left: 1px;
+    padding-right: 1px;
     background-color: #f9f9f9;
   }
   
@@ -50,12 +52,33 @@
   .photo-item:hover img {
     transform: scale(1.05);
   }
+
+
+  @media (max-width: 900px), (max-width:1080px){
+    .section-subtitle{
+      display: none;
+    }
+  }
+
+  @media (max-width: 825px) {
+    .photo-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+    .section-subtitle {
+      display: none;
+    }
+  }
+  
   
   /* Responsive Grid */
   @media (max-width: 768px) {
     .photo-grid {
       grid-template-columns: repeat(2, 1fr);
       gap: 1rem;
+    }
+    .section-subtitle {
+      display: none;
     }
   }
   
@@ -69,7 +92,7 @@
     }
   
     .section-subtitle {
-      font-size: 0.9rem;
+      display: none;
     }
   }
   

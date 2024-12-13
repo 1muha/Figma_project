@@ -1,172 +1,373 @@
-.yuji-mai-regular {
-  font-family: "Yuji Mai", serif;
+/* General Reset to Avoid Overflows */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Font Import */
+@import url("https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap");
+
+/* Font Styles */
+.clicker-script-regular {
+  font-family: "Clicker Script", cursive;
   font-weight: 400;
   font-style: normal;
 }
 
+/* Header Styles */
+.header {
+  background-image: url("./assets/suv.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%; /* Ensure it doesn’t exceed the viewport width */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align content to the left */
+  padding-left: 20px; /* Adjust padding instead of negative margins */
+  color: white;
+}
 
-.navbar {
+/* Logo Styling */
+.header .logo {
+  color: #ee1c45;
+  font-family: "Clicker Script", cursive;
+  font-weight: 300;
+  padding-top: 30px;
+  padding-left: 75px;
+  cursor: pointer;
+}
+
+/* Navigation Bar Styling */
+.nav .pages {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 3.5rem;
+  font-family: sans-serif;
+  font-weight: 100;
+  color: white;
+  margin-top: -40px;
+  margin-left: 350px;
+  cursor: pointer;
+}
+
+
+.nav .pages a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1rem;
+}
+
+.srch{
+  width: 25px;
+  fill: white;
+}
+
+.nav .pages a:hover{
+  color: red;
+}
+
+.lgn{
+  margin-left: 150px;
+  cursor: pointer;
+}
+
+.sgnup{
+  width: 85px;
+  height: 40px;
+  margin-top: -10px;
+  border-radius: 15px;
+  border: none;
+  background: linear-gradient(to right, #cd1a40, #ff803c);
+  cursor: pointer;
+  color: white;
+}
+
+.nav .pages button {
+  width: 90px;
+  height: 40px;
+  border-radius: 15px;
+  border: none;
+  background: linear-gradient(to right, #CD1A40, #FF803C);
+  color: white;
+  cursor: pointer;
+  margin-left: -25px;
+}
+
+.nav .pages button:hover {
+  background-color: #e66a2e; /* Slight hover effect */
+}
+
+/* Main Section Styling */
+.letsgo {
+  margin-top: 3rem;
+  margin-left: 75px;
+}
+
+.letsgo .expl {
+  font-family: "Clicker Script", cursive;
+  font-size: 35px;
+  font-weight: 100px;
+}
+
+.letsgo .leta {
+  font-size: 2.5rem;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 65px;
+  margin-top: 20px;
+}
+
+.letsgo p {
+  width: 90%; /* Ensure text stays within the viewport */
+  max-width: 500px; /* Limit the width of the paragraph */
+  font-family: sans-serif;
+  font-weight: 100;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: white;
+  margin-top: 15px;
+}
+
+
+/* Base styles */
+.location-date-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
-  background-color: rgba(0, 0, 0, 0.7);
+  background: rgba(70, 67, 67, 0.717);
   color: white;
-}
-
-.logo {
-  font-size: 24px;
-  font-weight: 400;
-  font-family: "Yuji Mai", serif;
-  color: #ff5c5c;
-  cursor: pointer;
-}
-
-.nav-links {
-  display: flex;
-  gap: 20px;
-  list-style: none;
-  cursor: pointer;
-}
-
-.auth-buttons button {
-  margin-left: 10px;
   padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+  border-radius: 16px;
+  position: relative;
+  max-width: 400px;
+  margin-top: 2rem;
 }
 
-.sign-in {
-  background-color: transparent;
-  color: white;
-  cursor: pointer;
-}
-
-.sign-up {
-  background-color: #ff5c5c;
-  color: white;
-}
-
-.hero-section {
-  height: 100vh;
-  background: url(./assets/suv.png) no-repeat center center/cover;
+.location, .date {
   display: flex;
   align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: white;
-  padding: 20px;
 }
 
-.hero-content h1 {
-  font-size: 30px;
-  font-family: "Yuji Mai", serif;
-  margin-bottom: 10px;
+.location .icon, .date .calendar-icon {
+  margin-right: 8px;
 }
 
-.hero-content h2 {
-  font-size: 50px;
-  margin-bottom: 20px;
-}
-
-.hero-content p {
-  font-size: 18px;
-  line-height: 1.5;
-  margin-bottom: 20px;
-}
-
-.search-box {
-  display: flex;
-  gap: 10px;
-  margin-top: 20px;
-  flex-wrap: wrap;
-}
-
-.search-box div {
-  display: flex;
-  flex-direction: column;
-  flex: 1 1 150px;
+.text {
+  font-size: 14px;
 }
 
 .search-button {
-  background-color: #ff5c5c;
+  background: linear-gradient(to right, #CD1A40, #FF803C);
   color: white;
-  padding: 10px 20px;
   border: none;
-  border-radius: 5px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-@media (max-width: 768px) {
-  .navbar {
+.search-button span {
+  font-size: 16px;
+}
+
+/* Responsive Media Queries */
+
+@media (max-width: 830px), (max-width: 1080px) {
+  .nav .pages {
     flex-direction: column;
     align-items: flex-start;
+    gap: 15px; /* Reduced the gap between links */
+    margin-left: 0; /* Remove left margin */
+    margin-top: 20px; /* Adjust top margin for better spacing */
   }
 
-  .nav-links {
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 10px;
+  .header .logo {
+    font-size: 2rem; /* Smaller logo size for tablets */
+    padding-left: 20px; /* Adjust padding */
   }
 
-  .auth-buttons {
-    margin-top: 10px;
+  .nav .pages button {
+    width: 80px; /* Smaller button width */
+    height: 35px; /* Smaller button height */
+    font-size: 0.9rem; /* Smaller button text */
+    margin-left: 0; /* Remove negative margin */
+  }
+  .lgn{
+    margin-left: 0;
   }
 
-  .hero-content h1 {
-    font-size: 28px;
+  .letsgo .expl{
+    font-size: 45px;
   }
-
-  .hero-content h2 {
-    font-size: 36px;
+  .letsgo .leta{
+    font-size: 80px;
   }
-
-  .hero-content p {
-    font-size: 16px;
-  }
-
-  .search-box {
-    flex-direction: column;
-  }
-
-  .search-button {
-    width: 100%;
-  }
-}
-
-@media (max-width: 480px) {
-  .navbar {
-    padding: 10px;
-  }
-
-  .logo {
+  .letsgo p{
     font-size: 20px;
   }
-  
 
-  .nav-links {
+  .letsgo{
+    margin-left: 20px;
+    margin-top: 200px;
+  }
+
+}
+
+
+@media (max-width: 915px){
+  .letsgo{
+    margin-top: 20rem;
+  }
+  .letsgo .expl{
+    font-size: 45px;
+  }
+  .letsgo .leta{
+    font-size: 100px;
+  }
+}
+
+
+@media (max-width: 800px) {
+  .nav .pages {
     flex-direction: column;
-    gap: 5px;
     align-items: flex-start;
+    gap: 15px; /* Reduced the gap between links */
+    margin-left: 0; /* Remove left margin */
+    margin-top: 20px; /* Adjust top margin for better spacing */
   }
 
-  .hero-content h1 {
-    font-size: 24px;
+  .header .logo {
+    font-size: 2rem; /* Smaller logo size for tablets */
+    padding-left: 20px; /* Adjust padding */
   }
 
-  .hero-content h2 {
-    font-size: 30px;
+  .nav .pages button {
+    width: 80px; /* Smaller button width */
+    height: 35px; /* Smaller button height */
+    font-size: 0.9rem; /* Smaller button text */
+    margin-left: 0; /* Remove negative margin */
+  }
+  .lgn{
+    margin-left: 0;
   }
 
-  .hero-content p {
-    font-size: 14px;
+  .letsgo {
+    margin-top: 10rem; /* Adjust top margin */
+    margin-left: 25px;
+    margin-top: -17rem;
   }
 
-  .search-box div {
-    width: 100%;
+  .letsgo .expl {
+    margin-top: 20rem;
+    font-size: 40px; /* Smaller font size for "Explore and Travel" */
+  }
+
+  .letsgo .leta {
+    font-size: 4rem; /* Adjusted font size for "Let's Go Now" */
+    margin-top: -.2rem;
+  }
+
+  .letsgo p {
+    font-size: 18px; /* Smaller text size */
+    max-width: 70%; /* Ensure text fits well */
+    margin-top: -1px;
+  }
+
+  .location-date-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .location, .date {
+    margin-bottom: 8px;
   }
 
   .search-button {
-    padding: 15px;
+    margin-top: 10px;
+  }
+}
+
+@media(max-width:550px){
+  .letsgo{
+    margin-left: 10px;
+    margin-top: -170px;
+  }
+  .letsgo .expl{
+    font-size: 30px;
+  }
+  .letsgo .leta{
+    font-size: 60px;
+  }
+  .location-date-container{
+    height: 150px;
   }
 } 
+
+@media (max-width: 500px){
+  .header .logo {
+    font-size: 1.5rem; /* Further reduced logo size for smaller screens */
+    padding-left: 10px; /* Adjust padding for mobile */
+  }
+
+  .nav .pages {
+    margin-left: 0; /* Ensure navbar aligns to left */
+    gap: 1rem; /* Reduce gap between links */
+  }
+
+  .nav .pages button {
+    width: 70px; /* Even smaller button width */
+    height: 30px; /* Even smaller button height */
+    font-size: 0.8rem; /* Smaller button text */
+  }
+}
+
+@media (max-width: 420px), (max-width:432px){
+  .letsgo{
+    margin-top: -100px;
+    margin-left: 5px;
+  }
+}
+
+
+@media (max-width: 390px), (max-width:415px){
+  .letsgo .expl{
+    font-size: 20px;
+  }
+  .letsgo .leta{
+    font-size: 50px;
+    margin-top: 10px;
+  }
+  .letsgo p{
+    font-size: 15px;
+    width: 400px;
+  }
+  .letsgo{
+    margin-top: -150px;
+    margin-left: px;
+  }
+  .location-date-container{
+    width: 320px;
+  }
+}
+
+@media (max-width: 350px){
+  .letsgo{
+    margin-top: -100px;
+  }
+  .letsgo .expl{
+    font-size: 25px;
+  }
+  .letsgo .leta{
+    font-size: 45px;
+  }
+  .location-date-container{
+    width: 300px;
+  }
+}

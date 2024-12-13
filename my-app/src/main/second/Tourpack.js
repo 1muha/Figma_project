@@ -9,10 +9,9 @@ const TourPack = () => {
   return (
     <section className="tour-packages">
       <div className="container">
-        <h2 className="section-title">
-          <span className="highlight">Popular</span> TOUR PACKAGES
-        </h2>
-        <p className="section-subtitle">
+        <h1 style={{color: "#ee1c45", fontWeight: 100, fontFamily: "Clicker Script, cursive", marginBottom: 10, fontSize: 35, fontStyle: "italic"}}>Popular</h1>
+        <h1 style={{fontWeight: 100, fontSize: 40, marginBottom: 20}}>TOUR PACKAGES</h1>
+        <p style={{width: 700, marginLeft: 220}} className="section-subtitle">
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
         </p>
         <div className="cards">

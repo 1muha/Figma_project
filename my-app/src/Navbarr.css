@@ -1,0 +1,122 @@
+/* Base styles for the navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    padding: 10px 20px;
+    position: relative;
+    margin-left: 20rem;
+    transform: translateY(-45px);
+  }
+  
+  .navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+  }
+  
+  .navbar .nav-links li {
+    display: inline;
+  }
+  
+  .navbar .nav-links a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .navbar .hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 1024px), (max-width:915px) {
+
+    .navbar{
+      margin-left: 950px;
+    }
+
+    .navbar .nav-links {
+      display: none;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      border-radius: 5px;
+      padding: 10px;
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .navbar.open .nav-links {
+      display: flex;
+    }
+  
+    .navbar .hamburger {
+      display: block;
+      margin-left: 100px;
+      color: black;
+    }
+  }
+
+  @media (max-width: 1024px), (max-width:915px){
+    .navbar{
+      margin-left: 700px;
+    }
+  }
+
+  @media(max-width: 855px){
+    .navbar{
+      margin-left: 610px;
+    }
+  }
+  
+
+  @media(max-width:800px), (max-width:820px){
+    .navbar{
+      margin-left: 600px;
+    }
+  }
+
+  @media(max-width:545px){
+    .navbar{
+      margin-left: 340px;
+      margin-top: -10px;
+    }
+  }
+
+
+  @media(max-width:432px){
+    .navbar{
+    margin-left: 210px;
+    }
+  }
+
+
+  @media(max-width:380px){
+    .navbar{
+      transform: translateX(-30px) translateY(-35px);
+    }
+  }
+
+  @media(max-width:420px){
+    .navbar{
+    margin-left: 180px;
+    color: black;
+    }
+  }
+
+  @media(max-width:415px){
+    .navbar{
+      margin-left: 210px;
+    }
+  }
+
+
+@media(max-width:350px){
+  .navbar{
+    margin-left: 150px;
+    margin-top: -2px;
+  }
+}

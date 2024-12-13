@@ -1,11 +1,12 @@
-/* Footer.css */
-
 .footer {
-  background-color: #333;
+  background-image: url("../../assets/footer_back.png");
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: darken;
   color: white;
   padding: 40px 20px;
+  background-size: cover;
+  background-position: center;
 }
-
 .footer-container {
   display: flex;
   flex-wrap: wrap;
@@ -30,6 +31,7 @@
   font-size: 14px;
   line-height: 1.6;
   margin-bottom: 20px;
+  font-weight: lighter;
 }
 
 .footer-socials {
@@ -50,50 +52,102 @@
 
 .footer-links {
   display: flex;
-  gap: 40px;
+  align-items: center;
+  padding-right: 20px;
+  gap: 35px;
 }
 
-.footer-column {
+.footer-column,
+.footer-column1 {
   flex: 1;
 }
 
-.footer-column h3 {
+.footer-column h3,
+.footer-column1 h3 {
   font-size: 18px;
   margin-bottom: 15px;
 }
 
-.footer-column ul {
+.footer-column ul,
+.footer-column1 ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.footer-column li {
+.footer-column li,
+.footer-column1 li {
   margin-bottom: 10px;
+  padding: 6px;
 }
 
-/* Remove default blue color for links */
 a {
-  color: inherit; /* Inherit color from parent element */
-  text-decoration: none; /* Remove underline */
+  color: inherit;
+  text-decoration: none;
 }
 
 a:hover {
-  color: white; /* Change color on hover if needed */
-  text-decoration: underline; /* Optional: add underline on hover */
+  color: white;
+  text-decoration: underline;
 }
 
-.footer-column a {
+.footer-column a,
+.footer-column1 a {
   font-size: 14px;
   transition: color 0.3s ease;
 }
 
+.footer-column a:hover,
 .footer-column a:hover {
-  color: white; /* Optional: set link color to white on hover */
+  color: white;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
+.icn {
+  width: 25px;
+  cursor: pointer;
+  fill: white;
+}
+.ytb {
+  width: 25px;
+  cursor: pointer;
+  fill: white;
+}
+
+.twtr {
+  width: 25px;
+  cursor: pointer;
+  fill: white;
+}
+
+.icn:hover{
+ fill: #dc2743;
+}
+
+.ytb:hover{
+  fill: red;
+ }
+
+ .twtr:hover{
+  fill: rgb(1, 102, 255);
+ }
+
+ .fcb{
+  width: 25px;
+  cursor: pointer;
+  fill: white;
+ }
+
+ .fcb:hover{
+  fill: #316FF6;
+ }
+
+@media (max-width:730px), (max-width: 770px) {
+  .footer-column {
+    margin-left: -200px;
+  }
+  .footer-column1 {
+    margin-left: 30px;
+  }
   .footer-container {
     flex-direction: column;
   }
@@ -105,5 +159,62 @@ a:hover {
   .footer-links {
     flex-direction: column;
     gap: 20px;
+    margin-left: -25rem;
+  }
+}
+
+@media (max-width:730px){
+  .footer-column {
+    margin-left: -180px;
+  }
+  .footer-column1 {
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 541px) {
+  .footer-column {
+    margin-left: 20px;
+  }
+  .footer-column1 {
+    margin-left: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-column1 {
+    margin-left: 230px;
+  }
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-text {
+    margin-bottom: 30px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 20px;
+    margin-left: -15rem;
+  }
+}
+
+@media (max-width: 480px){
+  .footer-column {
+    margin-left: 10px;
+  }
+  .footer-column1 {
+    margin-left: 240px;
+  }
+}
+
+
+@media (max-width: 375px) {
+  .footer-column {
+    margin-left: 50px;
+  }
+  .footer-column1 {
+    margin-left: 240px;
   }
 }
